@@ -181,10 +181,10 @@
 		a {
 			&:hover {
 				@if $p == $highlight {
-					color: _palette($p, fg-bold) !important;
+					color: _palette($p, fg-bold);
 				}
 				@else {
-					color: _palette(accent1, bg) !important;
+					color: _palette(accent1, bg) ;
 				}
 			}
 		}

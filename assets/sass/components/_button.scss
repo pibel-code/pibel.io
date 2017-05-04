@@ -96,18 +96,16 @@
 				box-shadow: none;
 
 				@if ($p == $highlight) {
-					background-color: _palette($p, fg-bold);
-					color: _palette($p, bg) !important;
+					background-color: $white;
+					color: $black;
 
 					@if ($p == 'invert') {
 						&:hover {
-							background-color: darken(_palette(accent1, bg), 5);
-							color: _palette(accent1, fg-bold) !important;
+							background-color: darken($white, 2);
 						}
 
 						&:active {
-							background-color: darken(_palette(accent1, bg), 15);
-							color: _palette(accent1, fg-bold) !important;
+							background-color: darken($white, 3);
 						}
 					}
 				}

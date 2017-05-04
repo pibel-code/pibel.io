@@ -39,6 +39,9 @@
 			text-transform: uppercase;
 			border: 0;
 		}
+		a:hover {
+			color: darken($black, 10%);
+		}
 
 		.logo {
 			display: block;
@@ -90,7 +93,7 @@
 		&.alt {
 			background-color: transparent;
 			border-bottom-color: transparent;
-			color: _palette(invert, fg-bold);
+			color: $black;
 
 			nav {
 				ul {

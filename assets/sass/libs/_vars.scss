@@ -37,6 +37,7 @@
 
 // Palette.
 	$palette: (
+
 		bg:					#ffffff,
 		bg-alt:				#f7f7f7,
 		fg:					#8e8e8e,
@@ -49,9 +50,9 @@
 		highlight:			accent1,
 
 		invert: (
-			bg:				#333333,
-			fg:				rgba(255,255,255,0.75),
-			fg-bold:		#ffffff,
+			bg:				#e8e8e8,
+			fg:				#2f2f2f,
+			fg-bold:		#2f2f2f,
 			fg-light:		rgba(255,255,255,0.5),
 			border:			#ffffff,
 			border-bg:		rgba(255,255,255,0.075),
