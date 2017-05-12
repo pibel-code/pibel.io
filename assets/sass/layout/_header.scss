@@ -111,10 +111,16 @@
 		}
 
 		&.with-banner {
+
 			& + #banner {
 				margin-top: -3.5em;
 			}
 		}
+
+		&.with-banner:not(.alt) {
+			display: none;
+		}
+
 
 		@include breakpoint(small) {
 			height: 2.75em;

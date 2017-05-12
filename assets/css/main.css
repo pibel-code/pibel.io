@@ -2102,6 +2102,8 @@ table.alt tbody tr td {
       background-image: url("images/menu-alt.svg"); }
   #header.with-banner + #banner {
     margin-top: -3.5em; }
+  #header.with-banner:not(.alt) {
+    display: none; }
   @media screen and (max-width: 736px) {
     #header {
       height: 2.75em;
@@ -2455,6 +2457,9 @@ body.is-menu-visible #menu {
   @media screen and (max-width: 736px) {
     #footer {
       padding: 3.75em 0 1.75em 0 ; } }
+
+.hidden-content {
+  display: none; }
 
 /* Wrapper */
 #wrapper > * {
