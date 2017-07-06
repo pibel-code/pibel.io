@@ -1,16 +1,29 @@
+const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
-    devtool: "source-map",
-    entry: '',
     module: {
-        rules: [{
-            test: /\.scss$/,
-            use: [{
-                loader: "style-loader" // creates style nodes from JS strings
-            }, {
-                loader: "css-loader" // translates CSS into CommonJS
-            }, {
-                loader: "sass-loader" // compiles Sass to CSS
-            }]
-        }]
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: [/node_modules/],
+                use: [{
+                    loader: 'babel-loader',
+                    options: { presets: ['es2015'] }
+                }]
+            }
+        ]
+    },
+    context: path.resolve(__dirname, './src/js'),
+    entry: {
+        app: './main.js'
+    },
+    output: {
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, './dist/assets'),
+        publicPath: '/js'
+    },
+    devServer: {
+        contentBase: path.resolve(__dirname, './src')
     }
 };
