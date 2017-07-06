@@ -6,12 +6,13 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta name="description" content="We are a software development and consulting agency that provides smart and innovative solutions.">
+	<meta name="description" content="We are a software development and consulting agency that provides smart and innovative digital solutions.">
 
 	<meta property="og:type" content="business.business">
 	<meta property="og:title" content="Pibel - Innovative Solutions">
 	<meta property="og:url" content="https://pibel.io">
 	<meta property="og:image" content="https://pibel.io/images/pibel-og.png">
+	<meta property="og:description" content="We are a software development and consulting agency that provides smart and innovative digital solutions.">
 	<meta property="business:contact_data:locality" content="Green Bay">
 	<meta property="business:contact_data:region" content="Wisconsin">
 	<meta property="business:contact_data:postal_code" content="54311">
@@ -44,8 +45,6 @@
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
-
 </head>
 <body>
 
@@ -75,7 +74,7 @@
 				<h1><img src="images/pibel-logo.png" class="logo" alt="Pibel logo"></h1>
 				<p class="tag-line">
 					We are a software development and consulting agency<br />
-					that provides <strong>smart</strong> and <strong>innovative</strong> solutions
+					that provides <strong>smart</strong> and <strong>innovative</strong> digital solutions
 				</p>
 			</header>
 			<ul class="actions">
@@ -192,9 +191,28 @@
 			<div class="inner">
 				<h2>We are here for you</h2>
 				<p>Send us a message to learn how we can help you.</p>
-				<ul class="actions vertical">
-					<li><a data-fancybox data-src="#contact-form" href="javascript:;" class="button special big">Contact Us</a></li>
-				</ul>
+				<form method="post" action="#">
+					<div class="row uniform">
+						<div class="6u 12u$(xsmall)">
+							<input type="text" name="name" id="name" value="" placeholder="Name" />
+						</div>
+						<div class="6u$ 12u$(xsmall)">
+							<input type="email" name="email" id="email" value="" placeholder="Email" />
+						</div>
+						<!-- Break -->
+
+						<!-- Break -->
+						<div class="12u$">
+							<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+						</div>
+						<!-- Break -->
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="special" /></li>
+							</ul>
+						</div>
+					</div>
+				</form>
 			</div>
 		</section>
 
@@ -216,36 +234,11 @@
 
 </div>
 
-<div  class="hidden-content" id="contact-form">
-	<h2>Contact Us</h2>
-	<form method="post" action="#">
-		<div class="row uniform">
-			<div class="6u 12u$(xsmall)">
-				<input type="text" name="name" id="name" value="" placeholder="Name" />
-			</div>
-			<div class="6u$ 12u$(xsmall)">
-				<input type="email" name="email" id="email" value="" placeholder="Email" />
-			</div>
-			<!-- Break -->
 
-			<!-- Break -->
-			<div class="12u$">
-				<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-			</div>
-			<!-- Break -->
-			<div class="12u$">
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-				</ul>
-			</div>
-		</div>
-	</form>
-</div>
 
 
 <!-- Scripts -->
 <script src="js/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 <script src="js/jquery.scrolly.min.js"></script>
 <script src="js/jquery.scrollex.min.js"></script>
 <script src="js/skel.min.js"></script>

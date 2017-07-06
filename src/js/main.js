@@ -1,3 +1,5 @@
+import css from '../sass/main.scss';
+
 (function($) {
 
 	skel.breakpoints({

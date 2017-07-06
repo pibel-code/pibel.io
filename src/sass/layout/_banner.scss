@@ -55,7 +55,7 @@
 			@include vendor('transition', 'height #{_duration(transition)} ease');
 			@include vendor('animation', 'more 0.75s ease-out #{_duration(banner) * 3} forwards');
 			background-color: _palette(bg);
-			background-image: url('images/arrow.svg');
+			background-image: url('../images/arrow.svg');
 			background-position: 50% 0.875em;
 			background-repeat: no-repeat;
 			background-size: auto;

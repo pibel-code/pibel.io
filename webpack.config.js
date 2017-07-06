@@ -11,6 +11,20 @@ module.exports = {
                     loader: 'babel-loader',
                     options: { presets: ['es2015'] }
                 }]
+            },
+            {
+                test: /\.(sass|scss)$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ]
+            },
+            {
+                test: /\.(png|svg|jpg)$/,
+                use: [
+                    'file-loader'
+                ]
             }
         ]
     },
