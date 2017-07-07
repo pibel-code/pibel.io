@@ -3,7 +3,7 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import 'base/config';
-
+@import '../../node_modules/font-awesome/scss/font-awesome';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500|Oswald:400');
 
 
@@ -60,6 +60,7 @@
 	@import 'components/table';
 	@import 'components/spotlight';
 	@import 'components/features';
+	@import "components/contact_form";
 
 // Layout.
 
