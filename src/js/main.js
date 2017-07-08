@@ -4,7 +4,11 @@ import scrolly from './jquery.scrolly.min';
 import scrollex from './jquery.scrollex.min';
 import util from './util';
 import skel from './skel.min';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ContactForm from './components/Contact/CTA';
 
+ReactDOM.render(<ContactForm />, document.getElementById('cta-form'));
 
 skel.breakpoints({
     xlarge:	'(max-width: 1680px)',
@@ -15,7 +19,7 @@ skel.breakpoints({
 });
 
 $(function() {
-    var	$window = $(window),
+    let	$window = $(window),
         $body = $('body');
 
     // Disable animations/transitions until the page has loaded.
