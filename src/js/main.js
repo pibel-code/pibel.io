@@ -6,7 +6,7 @@ import util from './util';
 import skel from './skel.min';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ContactForm from './components/Contact/CTA';
+import ContactForm from './components/Contact/Index';
 
 ReactDOM.render(<ContactForm />, document.getElementById('cta-form'));
 
