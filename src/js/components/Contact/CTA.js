@@ -31,6 +31,10 @@ export default class CTA extends React.Component {
         this.setState({form: form, valid: valid});
     }
 
+    /**
+     * @todo finish
+     * @param form
+     */
     onSubmit(form) {
         form.preventDefault();
     }
