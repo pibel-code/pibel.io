@@ -76,7 +76,6 @@ export default class CTA extends React.Component {
     }
 
     /**
-     * @todo finish
      * @param e
      */
     onSubmit(e) {
